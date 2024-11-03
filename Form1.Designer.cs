@@ -227,7 +227,7 @@
             lblKazanan.BackColor = SystemColors.HighlightText;
             lblKazanan.Font = new Font("Segoe UI", 13F);
             lblKazanan.ForeColor = Color.Red;
-            lblKazanan.Location = new Point(154, 186);
+            lblKazanan.Location = new Point(169, 187);
             lblKazanan.Name = "lblKazanan";
             lblKazanan.Size = new Size(125, 48);
             lblKazanan.TabIndex = 10;
