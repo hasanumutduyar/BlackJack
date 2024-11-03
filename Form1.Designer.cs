@@ -45,6 +45,7 @@
             pnlOyuncu2 = new Panel();
             btnSkorlar = new Button();
             btnBaslat = new Button();
+            lblKazanan = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbDeste).BeginInit();
             pnlOyuncu1Butonlar.SuspendLayout();
@@ -107,6 +108,7 @@
             btnPas1.TabIndex = 0;
             btnPas1.Text = "Pas";
             btnPas1.UseVisualStyleBackColor = true;
+            btnPas1.Click += btnPas1_Click;
             // 
             // btnKartCek1
             // 
@@ -178,6 +180,7 @@
             btnPas2.TabIndex = 0;
             btnPas2.Text = "Pas";
             btnPas2.UseVisualStyleBackColor = true;
+            btnPas2.Click += btnPas2_Click;
             // 
             // btnKartCek2
             // 
@@ -206,6 +209,7 @@
             btnSkorlar.TabIndex = 9;
             btnSkorlar.Text = "Skorları Göster";
             btnSkorlar.UseVisualStyleBackColor = true;
+            btnSkorlar.Click += btnSkorlar_Click;
             // 
             // btnBaslat
             // 
@@ -218,12 +222,26 @@
             btnBaslat.UseVisualStyleBackColor = true;
             btnBaslat.Click += btnBaslat_Click;
             // 
+            // lblKazanan
+            // 
+            lblKazanan.BackColor = SystemColors.HighlightText;
+            lblKazanan.Font = new Font("Segoe UI", 13F);
+            lblKazanan.ForeColor = Color.Red;
+            lblKazanan.Location = new Point(154, 186);
+            lblKazanan.Name = "lblKazanan";
+            lblKazanan.Size = new Size(125, 48);
+            lblKazanan.TabIndex = 10;
+            lblKazanan.Text = "KAZANAN";
+            lblKazanan.TextAlign = ContentAlignment.MiddleCenter;
+            lblKazanan.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Green;
             ClientSize = new Size(1071, 551);
+            Controls.Add(lblKazanan);
             Controls.Add(btnBaslat);
             Controls.Add(btnSkorlar);
             Controls.Add(lblOyuncu2Sayi);
@@ -264,5 +282,6 @@
         private Panel pnlOyuncu2;
         private Button btnSkorlar;
         private Button btnBaslat;
+        private Label lblKazanan;
     }
 }
